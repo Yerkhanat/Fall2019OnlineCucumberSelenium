@@ -7,6 +7,11 @@ Feature: Login
     When user logs in as a sales manager
     Then user should verify that title is a Dashboard
 
+  Scenario: Login as store manager and verify that title is Dashboard
+    Given user is on the login page
+    When user logs in as a store manager
+    Then user should verify that title is a Dashboard
+
 
 
 
